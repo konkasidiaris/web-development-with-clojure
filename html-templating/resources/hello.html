@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% include "register.html" %}
+  <h2>Hello {{name}}</h2>
+
+  <ul>
+    {% for item in items %}
+    <li>{{item}}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

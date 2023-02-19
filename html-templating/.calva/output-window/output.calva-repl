@@ -1,0 +1,112 @@
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉html-templating.core꞉> 
+; nREPL Connection was closed
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this:
+; "calva.autoSelectReplConnectProjectType": "Leiningen"
+;   - See https://calva.io/connect/#auto-select-project-type
+; 
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉html-templating.core꞉> 
+(selmer/render "{% image \"http://foo.com/logo.jpg\" %}" {})
+"<img src=\"http://foo.com/logo.jpg\"/>"
+clj꞉html-templating.core꞉> 
+{:block #object[selmer.tags$block_handler 0x4de0ecb8 "selmer.tags$block_handler@4de0ecb8"], :ifequal #object[selmer.tags$ifequal_handler 0x5bd05375 "selmer.tags$ifequal_handler@5bd05375"], :cycle #object[selmer.tags$cycle_handler 0x3de3d100 "selmer.tags$cycle_handler@3de3d100"], :extends nil, :now #object[selmer.tags$now_handler 0x6b8dfdcf "selmer.tags$now_handler@6b8dfdcf"], :include nil, :script #object[selmer.tags$script_handler 0x2142592a "selmer.tags$script_handler@2142592a"], :if #object[selmer.tags$if_handler 0x7850ed8c "selmer.tags$if_handler@7850ed8c"], :uppercase #object[selmer.tags$tag_handler$fn__2058 0x5b985857 "selmer.tags$tag_handler$fn__2058@5b985857"], :debug #object[selmer.tags$debug_handler 0x5fffa56e "selmer.tags$debug_handler@5fffa56e"], :style #object[selmer.tags$style_handler 0x6c473cb2 "selmer.tags$style_handler@6c473cb2"], :for #object[selmer.tags$for_handler 0x1384903b "selmer.tags$for_handler@1384903b"], :with #object[selmer.tags$with_handler 0xac728fc "selmer.tags$with_handler@ac728fc"], :comment #object[selmer.tags$comment_handler 0x2831281f "selmer.tags$comment_handler@2831281f"], :firstof #object[selmer.tags$first_of_handler 0x7d462307 "selmer.tags$first_of_handler@7d462307"], :image #object[selmer.tags$tag_handler$fn__2058 0x4a7471dc "selmer.tags$tag_handler$fn__2058@4a7471dc"], :safe #object[selmer.tags$safe_handler 0x79c720a6 "selmer.tags$safe_handler@79c720a6"], :ifunequal #object[selmer.tags$ifunequal_handler 0x58179e51 "selmer.tags$ifunequal_handler@58179e51"], :verbatim #object[selmer.tags$verbatim_handler 0x1485d04f "selmer.tags$verbatim_handler@1485d04f"], :sum #object[selmer.tags$sum_handler 0x7d16a992 "selmer.tags$sum_handler@7d16a992"]}
+clj꞉html-templating.core꞉> 
+" FOO INJECTED BAZ"
+clj꞉html-templating.core꞉> 
+; Syntax error reading source at (REPL:10:1).
+; EOF while reading, starting at line 9
+clj꞉html-templating.core꞉> 
+false
+clj꞉html-templating.core꞉> 
+false
+clj꞉html-templating.core꞉> 
+; Execution error (ArityException) at html-templating.core/eval4604 (form-init10143403442999415314.clj:30).
+; Wrong number of args (1) passed to: selmer.parser/render-file
+clj꞉html-templating.core꞉> 
+"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My amazing site</title>\n</head>\n<body>\n   <div id=\"content\">\n    \n  default content\n  <h2>Hello </h2>\n\n  <ul>\n    \n  </ul>\n\n   </div> \n</body>\n</html>"
+clj꞉html-templating.core꞉> 
+"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My amazing site</title>\n</head>\n<body>\n   <div id=\"content\">\n    \n  <form action=\"/register\" method=\"POST\">\n    <label for=\"id\">user id</label>\n    <input id=\"id\" name=\"id\" type=\"text\">\n    <input pass=\"pass\" name=\"pass\" type=\"text\">\n    <input type=\"submit\" value=\"register\">\n</form>\n  <h2>Hello </h2>\n\n  <ul>\n    \n  </ul>\n\n   </div> \n</body>\n</html>"
+clj꞉html-templating.core꞉> 
+; Syntax error reading source at (REPL:33:1).
+; EOF while reading, starting at line 32
+clj꞉html-templating.core꞉> 
+; Execution error at selmer.filter-parser/filter-str->fn (filter_parser.clj:99).
+; No filter defined with the name 'safea'
+clj꞉html-templating.core꞉> 
+"<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My amazing site</title>\n</head>\n<body>\n   <div id=\"content\">\n    \n  <form action=\"/register\" method=\"POST\">\n    <label for=\"id\">user id</label>\n    <input id=\"id\" name=\"id\" type=\"text\">\n    <input pass=\"pass\" name=\"pass\" type=\"text\">\n    <input type=\"submit\" value=\"register\">\n</form>\n  <h2>Hello </h2>\n\n  <ul>\n    \n  </ul>\n\n   </div> \n</body>\n</html>"
+clj꞉html-templating.core꞉> 
+; Execution error at selmer.filter-parser/filter-str->fn (filter_parser.clj:99).
+; No filter defined with the name 'safea'
+clj꞉html-templating.core꞉> 
+" FOO INJECTED BAZ"
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:42:4).
+; Unable to resolve symbol: renderer in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:42:4).
+; Unable to resolve symbol: renderer in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:42:4).
+; Unable to resolve symbol: renderer in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:28:3).
+; Unable to resolve symbol: wrap-error-page in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:28:3).
+; Unable to resolve symbol: wrap-error-page in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:28:3).
+; Unable to resolve symbol: wrap-error-page in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:28:3).
+; Unable to resolve symbol: wrap-error-page in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:28:3).
+; Unable to resolve symbol: wrap-error-page in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:1:1730).
+; Unable to resolve symbol: template in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:28:3).
+; Unable to resolve symbol: wrap-error-page in this context
+clj꞉html-templating.core꞉> 
+; Syntax error compiling at (src/html_templating/core.clj:28:3).
+; Unable to resolve symbol: wrap-error-page in this context
+clj꞉html-templating.core꞉> 
+; Syntax error (ClassNotFoundException) compiling at (src/html_templating/core.clj:1:1730).
+; selmer.filters
+clj꞉html-templating.core꞉> 
+; Syntax error (ClassNotFoundException) compiling at (src/html_templating/core.clj:2:3).
+; selmer.parser
+clj꞉html-templating.core꞉> 
+; Syntax error (ClassNotFoundException) compiling at (src/html_templating/core.clj:2:3).
+; selmer.parser
+clj꞉html-templating.core꞉> 
+nil
+clj꞉html-templating.core꞉> 
+#'html-templating.core/renderer
+clj꞉html-templating.core꞉> 
+{:status 200, :body "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My amazing site</title>\n</head>\n<body>\n   <div id=\"content\">\n    \n  <form action=\"/register\" method=\"POST\">\n    <label for=\"id\">user id</label>\n    <input id=\"id\" name=\"id\" type=\"text\">\n    <input pass=\"pass\" name=\"pass\" type=\"text\">\n    <input type=\"submit\" value=\"register\">\n</form>\n  <h2>Hello </h2>\n\n  <ul>\n    \n  </ul>\n\n   </div> \n</body>\n</html>"}
+clj꞉html-templating.core꞉> 
+{:status 500, :headers {"Content-Type" "text/html; charset=utf-8"}, :body "<html>\n<head>\n    <font face='arial'>\n        <style type='text/css'>\n            body {\n                margin: 0px;\n                background: #ececec;\n            }\n            #header {\n                padding-top:  5px;\n                padding-left: 25px;\n                color: white;\n                background: #a32306;\n                text-shadow: 1px 1px #33333;\n                border-bottom: 1px solid #710000;\n            }\n            #error-wrap {\n                border-top: 5px solid #d46e6b;\n            }\n            #error-message {\n                color: #800000;\n                background: #f5a29f;\n                padding: 10px;\n                text-shadow: 1px 1px #FFBBBB;\n                border-top: 1px solid #f4b1ae;\n            }\n            #file-wrap {\n                border-top: 5px solid #2a2a2a;\n            }\n            #file {\n                color: white;\n                background: #333333;\n                padding: 10px;\n                padding-left: 20px;\n                text-shadow: 1px 1px #555555;\n                border-top: 1px solid #444444;\n            }\n            #line-number {\n                width=20px;\n                color: #8b8b8b;\n                background: #d6d6d6;\n                float: left;\n                padding: 5px;\n                text-shadow: 1px 1px #EEEEEE;\n                border-right: 1px solid #b6b6b6;\n            }\n            #line-content {\n                float: left;\n                padding: 5px;\n            }\n            #error-content {\n                float: left;\n                width: 100%;\n                border-top: 5px solid #cdcdcd;\n                border-bottom: 5px solid #cdcdcd;\n            }\n        </style>\n</head>\n<body>\n<div id='header'>\n    <h1>Template Compilation Error</h1>\n</div>\n<div id='error-wrap'>\n    <div id='error-message'>Unrecognized filter content|safea found inside the tag.</div>\n</div>\n\n<div id='file-wrap'>\n    <div id='file'>In file:/workspaces/clj/html-templating/resources/error.html on line 1.</div>\n</div>\n\n<div id='error-content'>\n    <div id='line-number'>1</div>\n    <div id='line-content'>{{content|safea}}</div>\n</div>\n\n\n</body>\n</html>"}
+clj꞉html-templating.core꞉> 
