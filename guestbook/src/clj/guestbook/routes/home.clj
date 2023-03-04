@@ -2,37 +2,29 @@
   (:require
    [guestbook.layout :as layout]
    [guestbook.db.core :as db]
+   [guestbook.validation :refer [validate-message]]
    [guestbook.middleware :as middleware]
    [ring.util.response]
-   [ring.util.http-response :as response]
-   [struct.core :as st]))
+   [ring.util.http-response :as response]))
 
 (defn home-page [request]
-  (layout/render request "home.html" {:messages (db/get-messages)}))
+  (layout/render request "home.html"))
 
 (defn about-page [request]
   (layout/render request "about.html"))
 
-(def message-schema
-  [[:name
-    st/required
-    st/string]
-   [:message
-    st/required
-    st/string
-    {:message "message must contain at least 10 characters"
-     :validate (fn [msg] (>= (count msg) 10))}]])
-
-(defn validate-message [params]
-  (first (st/validate params message-schema)))
-
 (defn save-message! [{:keys [params]}]
   (if-let [errors (validate-message params)]
-    (-> (response/found "/")
-        (assoc :flash (assoc params :errors errors)))
-    (do
+    (response/bad-request {:errors errors})
+    (try
       (db/save-message! params)
-      (response/found "/"))))
+      (response/ok {:status :ok})
+      (catch Exception _
+        (response/internal-server-error
+         {:errors {:server-error ["Failed to save message!"]}})))))
+
+(defn message-list [_]
+  (response/ok {:messages (vec (db/get-messages))}))
 
 (defn home-routes []
   [""
@@ -40,5 +32,6 @@
                  middleware/wrap-formats]}
    ["/" {:get home-page}]
    ["/about" {:get about-page}]
+   ["/messages" {:get message-list}]
    ["/message" {:post save-message!}]])
 

@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-  <div class="content">
+<input id="token" type="hidden" value="{{csrf-token}}"/>
+<div id="content"></div>
+
+  <!-- <div class="content">
     <div class="columns is-centered">
       <div class="column is-two-thirds">
         <h3>Messages</h3>
@@ -39,5 +42,8 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
+{% endblock %}
+{% block page-scripts %}
+  {% script "/js/app.js" %}
 {% endblock %}

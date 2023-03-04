@@ -15,13 +15,245 @@
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
 clj꞉user꞉>  ; Use `alt+enter` to evaluate
-(+ 1 1)
-2
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:36:1).
+; No such namespace: dom
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:32:1).
+; Unable to resolve symbol: message-form in this context
+clj꞉guestbook.core꞉> 
+[]
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+#'guestbook.core/home
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:36:1).
+; No such namespace: dom
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:10:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; nREPL Connection was closed
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this:
+; "calva.autoSelectReplConnectProjectType": "Leiningen"
+;   - See https://calva.io/connect/#auto-select-project-type
+; 
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
 clj꞉user꞉> 
-(in-ns 'user)
-#object[clojure.lang.Namespace 0x68826d2b "user"]
-clj꞉user꞉> 
-(in-ns 'guestbook.routes.home)
-#object[clojure.lang.Namespace 0x1909861c "guestbook.routes.home"]
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:1:1768).
+; Unable to resolve symbol: fields in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:14:22).
+; No such namespace: js
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:14:22).
+; No such namespace: js
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:14:41).
+; Unable to resolve symbol: % in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:14:22).
+; No such namespace: js
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:14:22).
+; No such namespace: js
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:1:1768).
+; Unable to resolve symbol: fields in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:18:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+#'guestbook.core/home
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:48:1).
+; No such namespace: dom
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Execution error (FileNotFoundException) at guestbook.core/eval18953$loading (form-init17257504558043093066.clj:1).
+; Could not locate reagent/dom__init.class, reagent/dom.clj or reagent/dom.cljc on classpath.
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error (ClassNotFoundException) compiling at (src/cljs/guestbook/core.cljs:11:3).
+; ajax.core
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:11:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+#'guestbook.routes.home/save-message!
 clj꞉guestbook.routes.home꞉> 
+#'guestbook.routes.home/save-message!
+clj꞉guestbook.routes.home꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:26:34).
+; No such namespace: string
+clj꞉guestbook.core꞉> 
+; Execution error (FileNotFoundException) at guestbook.core/eval19255$loading (form-init17257504558043093066.clj:1).
+; Could not locate reagent/dom__init.class, reagent/dom.clj or reagent/dom.cljc on classpath.
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:12:3).
+; Unable to resolve symbol: POST in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:27:34).
+; No such namespace: string
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:31:16).
+; No such var: r/atom
+clj꞉guestbook.core꞉> 
+#'guestbook.core/home
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:65:1).
+; No such namespace: dom
+clj꞉guestbook.core꞉> 
+; nREPL Connection was closed
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this:
+; "calva.autoSelectReplConnectProjectType": "Leiningen"
+;   - See https://calva.io/connect/#auto-select-project-type
+; 
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:29:3).
+; Unable to resolve symbol: GET in this context
+clj꞉guestbook.core꞉> 
+#'guestbook.core/message-list
+clj꞉guestbook.core꞉> 
+#'guestbook.routes.home/message-list
+clj꞉guestbook.routes.home꞉> 
+#'guestbook.routes.home/home-routes
+clj꞉guestbook.routes.home꞉> 
+#'guestbook.routes.home/save-message!
+clj꞉guestbook.routes.home꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:75:18).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:9:30).
+; Unable to resolve symbol: validate-message in this context
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:27:34).
+; No such namespace: string
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:30:3).
+; Unable to resolve symbol: GET in this context
+clj꞉guestbook.core꞉> 
+#'guestbook.core/message-list
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:46:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:76:18).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+#'guestbook.core/message-list
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:46:16).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:76:18).
+; No such namespace: r
+clj꞉guestbook.core꞉> 
+; Syntax error compiling at (src/cljs/guestbook/core.cljs:87:1).
+; No such namespace: dom
+clj꞉guestbook.core꞉> 
+nil
+clj꞉guestbook.db.core꞉> 
+nil
+clj꞉guestbook.db.core꞉> 
+"<< stopping.. #'guestbook.db.core/*db* (namespace was recompiled)"
+">> starting.. #'guestbook.db.core/*db* (namespace was recompiled)"
+#'guestbook.db.core/*db*
+clj꞉guestbook.db.core꞉> 
+{:snips {}, :fns {:save-message! {:meta {:doc "creates a new message using the name and message keys", :command :!, :result :n, :file "sql/queries.sql", :line 1, :arglists ([db] [db params] [db params options & command-options])}, :fn #object[conman.core$try_query$fn__13017$fn__13018 0x4d078dc1 "conman.core$try_query$fn__13017$fn__13018@4d078dc1"]}, :get-messages {:meta {:doc "selects all available messages", :command :?, :result :*, :file "sql/queries.sql", :line 7, :arglists ([db] [db params] [db params options & command-options])}, :fn #object[conman.core$try_query$fn__13017$fn__13018 0x141dc8a5 "conman.core$try_query$fn__13017$fn__13018@141dc8a5"]}}}
+clj꞉guestbook.db.core꞉> 
+nil
+clj꞉guestbook.db.core꞉> 
+#'guestbook.db.core/spl-timestamp->inst
+clj꞉guestbook.db.core꞉> 
+#'guestbook.db.core/sql-timestamp->inst
+clj꞉guestbook.db.core꞉> 
+nil
+clj꞉guestbook.db.core꞉> 
 ; nREPL Connection was closed

@@ -14,3 +14,7 @@ profiles.clj
 
 /node_modules
 /log
+target
+.vscode
+.lsp
+.clj-kondo
